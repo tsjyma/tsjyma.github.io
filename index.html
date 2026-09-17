@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10213d" />
+    <meta name="description" content="Jingyuan Ma is an undergraduate at the Institute for Interdisciplinary Information Sciences, Tsinghua University. Research interests include multimodal machine learning, reinforcement learning, and AI agents." />
+    <title>Jingyuan Ma · Tsinghua University</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%2310213d'/%3E%3Cpath d='M41 17v21c0 8-4 12-12 12-5 0-9-2-12-6l6-5c2 2 3 3 6 3 3 0 4-2 4-5V17z' fill='%23d9e7ff'/%3E%3C/svg%3E" />
+    <style>
+      :root { color-scheme: light; --ink:#10213d; --muted:#617087; --line:#dce4ee; --blue:#3158d6; --paper:#f7f9fc; --white:#fff; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:16px; line-height:1.6; }
+      a { color:inherit; text-decoration:none; }
+      a:hover, a:focus-visible { color:var(--blue); }
+      a:focus-visible { outline:2px solid var(--blue); outline-offset:4px; border-radius:2px; }
+      .shell { max-width:1240px; min-height:100vh; margin:auto; display:grid; grid-template-columns:260px minmax(0,1fr); background:var(--white); box-shadow:0 24px 80px #17315b0a; }
+      .rail { padding:48px 30px; border-right:1px solid var(--line); display:flex; flex-direction:column; gap:76px; }
+      .mark { width:43px; height:43px; display:grid; place-items:center; border-radius:12px; background:var(--ink); color:white; font-family:Georgia,serif; font-size:22px; font-weight:700; }
+      nav { display:grid; gap:17px; }
+      nav a { font-size:14px; font-weight:600; letter-spacing:.01em; color:var(--muted); }
+      nav a:first-child { color:var(--ink); }
+      .rail-bottom { margin-top:auto; font-size:13px; color:var(--muted); }
+      main { padding:48px clamp(28px,6vw,92px) 80px; }
+      .topline { display:flex; align-items:center; justify-content:space-between; min-height:43px; font-size:13px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); }
+      .topline span:last-child { color:var(--blue); }
+      .hero { padding:86px 0 80px; border-bottom:1px solid var(--line); }
+      .hero-grid { display:grid; grid-template-columns:minmax(0,1fr) 205px; align-items:center; gap:42px; }
+      .portrait { margin:0; width:205px; overflow:hidden; border:1px solid var(--line); border-radius:8px; background:#fff; box-shadow:0 18px 45px #17315b12; }
+      .portrait img { display:block; width:100%; height:auto; }
+      .eyebrow { display:flex; align-items:center; gap:12px; margin:0 0 24px; font-size:13px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--blue); }
+      .eyebrow:before { content:""; display:block; width:26px; height:2px; background:var(--blue); }
+      h1,h2,h3,p { margin-top:0; }
+      h1 { max-width:850px; margin-bottom:26px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(56px,6vw,82px); line-height:1.02; letter-spacing:-.065em; font-weight:400; }
+      .role { max-width:670px; margin-bottom:32px; font-size:clamp(18px,2.1vw,23px); line-height:1.5; color:#455571; }
+      .hero-links { display:flex; flex-wrap:wrap; gap:10px 25px; font-size:15px; font-weight:600; }
+      .hero-links a { border-bottom:1px solid var(--blue); padding-bottom:3px; color:var(--blue); }
+      section { display:grid; grid-template-columns:145px minmax(0,1fr); gap:35px; padding:53px 0; border-bottom:1px solid var(--line); }
+      section:last-of-type { border-bottom:0; }
+      .section-label { padding-top:4px; font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--blue); }
+      .section-body { max-width:690px; }
+      h2 { margin-bottom:20px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(29px,3vw,40px); font-weight:400; line-height:1.16; letter-spacing:-.035em; }
+      .section-body p { color:#455571; }
+      .muted { color:var(--muted) !important; }
+      .tags { display:flex; flex-wrap:wrap; gap:9px; }
+      .tag { padding:8px 13px; border:1px solid var(--line); border-radius:5px; color:#52627c; font-size:14px; }
+      .publication { padding:19px 0; border-top:1px solid var(--line); }
+      .publication:first-of-type { border-top:0; padding-top:0; }
+      .publication strong { display:block; font-size:17px; font-weight:650; line-height:1.45; }
+      .publication p { margin:6px 0 0; font-size:14px; }
+      .publication a { display:inline-block; margin-top:9px; color:var(--blue); font-size:14px; font-weight:650; border-bottom:1px solid var(--blue); }
+      .contact-link { display:inline-block; padding-bottom:4px; border-bottom:1px solid var(--blue); color:var(--blue); font-size:18px; }
+      footer { padding-top:20px; color:#8591a3; font-size:12px; }
+      @media (max-width:850px) { .shell { display:block; } .rail { padding:24px 28px; flex-direction:row; align-items:center; justify-content:space-between; border-right:0; border-bottom:1px solid var(--line); } .rail nav { display:flex; flex-wrap:wrap; gap:17px; } .rail-bottom { display:none; } main { padding:26px 28px 56px; } .hero { padding:70px 0 66px; } }
+      @media (max-width:680px) { .hero-grid { grid-template-columns:1fr; gap:30px; } .portrait { order:-1; width:155px; } }
+      @media (max-width:580px) { .rail { align-items:flex-start; gap:20px; } .rail nav { justify-content:flex-end; gap:8px 13px; } .rail nav a { font-size:12px; } .topline { font-size:11px; } .hero { padding:48px 0 55px; } h1 { font-size:clamp(52px,16vw,78px); } section { display:block; padding:39px 0; } .section-label { display:block; margin-bottom:17px; } }
+      @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="rail" aria-label="Site navigation">
+        <a class="mark" href="#top" aria-label="Back to top">J</a>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Work</a>
+          <a href="#honors">Honors</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="rail-bottom">Jingyuan Ma · Tsinghua University</div>
+      </aside>
+      <main id="top">
+        <div class="topline"><span>Academic profile</span><span>Beijing, China</span></div>
+        <header class="hero">
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Undergraduate · Tsinghua University</p>
+              <h1>Jingyuan Ma</h1>
+              <p class="role">Institute for Interdisciplinary Information Sciences<br />Tsinghua University</p>
+              <div class="hero-links"><a href="mailto:majy24@mails.tsinghua.edu.cn">Email</a><a href="https://github.com/tsjyma" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://arxiv.org/abs/2609.17057" target="_blank" rel="noopener noreferrer">Latest paper</a></div>
+            </div>
+            <figure class="portrait"><img src="jingyuan-ma-portrait.png" width="241" height="337" alt="Portrait of Jingyuan Ma" fetchpriority="high" /></figure>
+          </div>
+        </header>
+        <section id="about" aria-labelledby="about-heading">
+          <div class="section-label">01 / About</div>
+          <div class="section-body"><h2 id="about-heading">About me</h2><p>I am an undergraduate at the Institute for Interdisciplinary Information Sciences, Tsinghua University. My research interests include multimodal machine learning, reinforcement learning, and AI agents.</p></div>
+        </section>
+        <section id="research" aria-labelledby="research-heading">
+          <div class="section-label">02 / Research</div>
+          <div class="section-body"><h2 id="research-heading">Research interests</h2><div class="tags"><span class="tag">Multimodal machine learning</span><span class="tag">Reinforcement learning</span><span class="tag">AI agents</span></div></div>
+        </section>
+        <section id="publications" aria-labelledby="publications-heading">
+          <div class="section-label">03 / Selected work</div>
+          <div class="section-body">
+            <h2 id="publications-heading">Publication</h2>
+            <div class="publication"><strong>Budgeted Express-Mesh: Traffic-Aware Link Placement and Deadlock-Free Adaptive Routing</strong><p>Li Cao and Jingyuan Ma · arXiv preprint, 2026</p><a href="https://arxiv.org/abs/2609.17057" target="_blank" rel="noopener noreferrer">Read paper</a></div>
+            <h2 style="margin-top:38px">Open-source contributions</h2>
+            <div class="publication"><strong>MiniCPM-V-4.6 support for ms-swift</strong><p>Contributed model support to the ms-swift framework. Merged pull request #9286, 2026.</p><a href="https://github.com/modelscope/ms-swift/pull/9286" target="_blank" rel="noopener noreferrer">View contribution</a></div>
+            <div class="publication"><strong>MiniCPM-V-4.6 support for LlamaFactory</strong><p>Added training support for MiniCPM-V-4.6. Merged pull request #10472, 2026.</p><a href="https://github.com/hiyouga/LlamaFactory/pull/10472" target="_blank" rel="noopener noreferrer">View contribution</a></div>
+            <div class="publication"><strong>M2PO support for AReaL</strong><p>Implemented M2PO algorithm support, with an example configuration and documentation. Merged pull request #480, 2025.</p><a href="https://github.com/areal-project/AReaL/pull/480" target="_blank" rel="noopener noreferrer">View contribution</a></div>
+          </div>
+        </section>
+        <section id="honors" aria-labelledby="honors-heading">
+          <div class="section-label">04 / Honors</div>
+          <div class="section-body">
+            <h2 id="honors-heading">Honors &amp; awards</h2>
+            <div class="publication"><strong>National Scholarship</strong><p>2025</p></div>
+            <div class="publication"><strong>Silver Medal, 40th Chinese Physics Olympiad (CPhO)</strong><p>2023</p></div>
+          </div>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+          <div class="section-label">05 / Contact</div>
+          <div class="section-body"><h2 id="contact-heading">Contact</h2><p>For research inquiries, please reach me by email.</p><a class="contact-link" href="mailto:majy24@mails.tsinghua.edu.cn">majy24@mails.tsinghua.edu.cn</a></div>
+        </section>
+        <footer>© <span id="year">2026</span> Jingyuan Ma</footer>
+      </main>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
