@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#10213d" />
-    <meta name="description" content="Jingyuan Ma is an undergraduate at the Institute for Interdisciplinary Information Sciences, Tsinghua University. Research interests include multimodal machine learning, reinforcement learning, and AI agents." />
+    <meta name="description" content="Jingyuan Ma is a third-year AI undergraduate at the Institute for Interdisciplinary Information Sciences, Tsinghua University. Research focuses on video understanding and multimodal long-context modeling, with interests in AI agents, sparse attention, and model architectures." />
     <title>Jingyuan Ma · Tsinghua University</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%2310213d'/%3E%3Cpath d='M41 17v21c0 8-4 12-12 12-5 0-9-2-12-6l6-5c2 2 3 3 6 3 3 0 4-2 4-5V17z' fill='%23d9e7ff'/%3E%3C/svg%3E" />
     <style>
@@ -12,7 +12,7 @@
       * { box-sizing:border-box; }
       html { scroll-behavior:smooth; }
       body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:16px; line-height:1.6; }
-      a { color:inherit; text-decoration:none; }
+      a { color:inherit; text-decoration:none; overflow-wrap:anywhere; }
       a:hover, a:focus-visible { color:var(--blue); }
       a:focus-visible { outline:2px solid var(--blue); outline-offset:4px; border-radius:2px; }
       .shell { max-width:1240px; min-height:100vh; margin:auto; display:grid; grid-template-columns:260px minmax(0,1fr); background:var(--white); box-shadow:0 24px 80px #17315b0a; }
@@ -49,7 +49,7 @@
       .publication:first-of-type { border-top:0; padding-top:0; }
       .publication strong { display:block; font-size:17px; font-weight:650; line-height:1.45; }
       .publication p { margin:6px 0 0; font-size:14px; }
-      .publication a { display:inline-block; margin-top:9px; color:var(--blue); font-size:14px; font-weight:650; border-bottom:1px solid var(--blue); }
+      .publication a { max-width:100%; display:inline-block; margin-top:9px; color:var(--blue); font-size:14px; font-weight:650; border-bottom:1px solid var(--blue); }
       .contact-link { display:inline-block; padding-bottom:4px; border-bottom:1px solid var(--blue); color:var(--blue); font-size:18px; }
       footer { padding-top:20px; color:#8591a3; font-size:12px; }
       @media (max-width:850px) { .shell { display:block; } .rail { padding:24px 28px; flex-direction:row; align-items:center; justify-content:space-between; border-right:0; border-bottom:1px solid var(--line); } .rail nav { display:flex; flex-wrap:wrap; gap:17px; } .rail-bottom { display:none; } main { padding:26px 28px 56px; } .hero { padding:70px 0 66px; } }
@@ -65,7 +65,11 @@
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#research">Research</a>
-          <a href="#publications">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#opensource">Open source</a>
+          <a href="#service">Service</a>
           <a href="#honors">Honors</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -76,43 +80,49 @@
         <header class="hero">
           <div class="hero-grid">
             <div>
-              <p class="eyebrow">Undergraduate · Tsinghua University</p>
+              <p class="eyebrow">Third-year AI undergraduate · Tsinghua University</p>
               <h1>Jingyuan Ma</h1>
               <p class="role">Institute for Interdisciplinary Information Sciences<br />Tsinghua University</p>
-              <div class="hero-links"><a href="mailto:majy24@mails.tsinghua.edu.cn">Email</a><a href="https://github.com/tsjyma" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://arxiv.org/abs/2609.17057" target="_blank" rel="noopener noreferrer">Latest paper</a></div>
+              <div class="hero-links"><a href="mailto:majy24@mails.tsinghua.edu.cn">Email</a><a href="https://github.com/tsjyma" target="_blank" rel="noopener noreferrer">GitHub</a><a href="cv.pdf">CV (PDF)</a></div>
             </div>
             <figure class="portrait"><img src="jingyuan-ma-portrait.png" width="241" height="337" alt="Portrait of Jingyuan Ma" fetchpriority="high" /></figure>
           </div>
         </header>
         <section id="about" aria-labelledby="about-heading">
           <div class="section-label">01 / About</div>
-          <div class="section-body"><h2 id="about-heading">About me</h2><p>I am an undergraduate at the Institute for Interdisciplinary Information Sciences, Tsinghua University. My research interests include multimodal machine learning, reinforcement learning, and AI agents.</p></div>
+          <div class="section-body"><h2 id="about-heading">About me</h2><p>I am a third-year undergraduate studying artificial intelligence at the Institute for Interdisciplinary Information Sciences, Tsinghua University. I am currently a research intern in Assistant Professor Yuan Yao's MAI Lab at the College of AI, Tsinghua University, focusing on multimodal machine learning. I am also interested in AI agents, sparse attention, and model architectures.</p>
+            <h3>Education</h3><p>Tsinghua University · Third-year undergraduate (AI track)<br />Institute for Interdisciplinary Information Sciences<br /><strong>GPA: 3.984/4.000 · Rank: 2/92</strong></p></div>
         </section>
         <section id="research" aria-labelledby="research-heading">
           <div class="section-label">02 / Research</div>
-          <div class="section-body"><h2 id="research-heading">Research interests</h2><div class="tags"><span class="tag">Multimodal machine learning</span><span class="tag">Reinforcement learning</span><span class="tag">AI agents</span></div></div>
+          <div class="section-body"><h2 id="research-heading">Research interests</h2><div class="tags"><span class="tag">Multimodal machine learning</span><span class="tag">Video understanding</span><span class="tag">Multimodal long-context modeling</span><span class="tag">AI agents</span><span class="tag">Sparse attention</span><span class="tag">Model architectures</span></div></div>
+        </section>
+        <section id="experience" aria-labelledby="experience-heading">
+          <div class="section-label">03 / Experience</div>
+          <div class="section-body"><h2 id="experience-heading">Research experience</h2><article class="publication"><strong>Research Intern · MAI Lab, College of AI</strong><p>Mar. 2026 – Present · Tsinghua University<br />Supervisor: Assistant Professor Yuan Yao<br />Research focus: video understanding and multimodal long-context modeling.</p></article><article class="publication"><strong>Research Intern · Institute for Interdisciplinary Information Sciences</strong><p>Sep. 2025 – Jan. 2026 · Tsinghua University<br />Supervisor: Yi Wu (then Assistant Professor)<br />Research focus: coding agents and asynchronous reinforcement learning.</p></article></div>
         </section>
         <section id="publications" aria-labelledby="publications-heading">
-          <div class="section-label">03 / Selected work</div>
-          <div class="section-body">
-            <h2 id="publications-heading">Publication</h2>
-            <div class="publication"><strong>Budgeted Express-Mesh: Traffic-Aware Link Placement and Deadlock-Free Adaptive Routing</strong><p>Li Cao and Jingyuan Ma · arXiv preprint, 2026</p><a href="https://arxiv.org/abs/2609.17057" target="_blank" rel="noopener noreferrer">Read paper</a></div>
-            <h2 style="margin-top:38px">Open-source contributions</h2>
-            <div class="publication"><strong>MiniCPM-V-4.6 support for ms-swift</strong><p>Contributed model support to the ms-swift framework. Merged pull request #9286, 2026.</p><a href="https://github.com/modelscope/ms-swift/pull/9286" target="_blank" rel="noopener noreferrer">View contribution</a></div>
-            <div class="publication"><strong>MiniCPM-V-4.6 support for LlamaFactory</strong><p>Added training support for MiniCPM-V-4.6. Merged pull request #10472, 2026.</p><a href="https://github.com/hiyouga/LlamaFactory/pull/10472" target="_blank" rel="noopener noreferrer">View contribution</a></div>
-            <div class="publication"><strong>M2PO support for AReaL</strong><p>Implemented M2PO algorithm support, with an example configuration and documentation. Merged pull request #480, 2025.</p><a href="https://github.com/areal-project/AReaL/pull/480" target="_blank" rel="noopener noreferrer">View contribution</a></div>
-          </div>
+          <div class="section-label">04 / Publications</div>
+          <div class="section-body"><h2 id="publications-heading">Publications &amp; manuscripts</h2><article class="publication"><strong>Replay Before You Reply: Second-Look Prompting for Unified Multimodal Encoding</strong><p>Under review</p><a href="https://openreview.net/forum?id=XRNcmbQebj" target="_blank" rel="noopener noreferrer">https://openreview.net/forum?id=XRNcmbQebj</a></article><article class="publication"><strong>Budgeted Express-Mesh: Traffic-Aware Link Placement and Deadlock-Free Adaptive Routing</strong><p>Li Cao and Jingyuan Ma · arXiv preprint, 2026</p><a href="https://arxiv.org/abs/2609.17057" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2609.17057</a></article></div>
+        </section>
+        <section id="projects" aria-labelledby="projects-heading">
+          <div class="section-label">05 / Projects</div>
+          <div class="section-body"><h2 id="projects-heading">Selected projects</h2><article class="publication"><strong>From Computation to Information to Accuracy: On the Feasibility of Adaptive Visual Token Pruning</strong><p>Investigates question-adaptive visual token pruning through oracle sparsity labeling, text-only and multimodal sparsity classifiers, and evaluation across seven vision-language benchmarks.</p><a href="https://github.com/tsjyma/qasparse" target="_blank" rel="noopener noreferrer">https://github.com/tsjyma/qasparse</a></article><article class="publication"><strong>BACH: Bridging Agent and Chord Harmony for Long-form Accompaniment Generation</strong><p>Combines a local chord planner with LLM agents for structure, arrangement, instrument writing, and critique. Generates piano, bass, and drum accompaniment from a LilyPond melody, with score and MIDI rendering.</p><a href="https://github.com/tsjyma/music-agent" target="_blank" rel="noopener noreferrer">https://github.com/tsjyma/music-agent</a></article></div>
+        </section>
+        <section id="opensource" aria-labelledby="opensource-heading">
+          <div class="section-label">06 / Open source</div>
+          <div class="section-body"><h2 id="opensource-heading">Open-source contributions</h2><article class="publication"><strong>MiniCPM Support · ms-swift &amp; LlamaFactory</strong><p>2026 · All three pull requests merged<br />Contributed MiniCPM-V-4.6 model and training support across both frameworks, and MiniCPM-OCR-1.0 model loading and supervised fine-tuning support in ms-swift.</p><a href="https://github.com/modelscope/ms-swift/pull/9286" target="_blank" rel="noopener noreferrer">https://github.com/modelscope/ms-swift/pull/9286</a><br /><a href="https://github.com/hiyouga/LlamaFactory/pull/10472" target="_blank" rel="noopener noreferrer">https://github.com/hiyouga/LlamaFactory/pull/10472</a><br /><a href="https://github.com/modelscope/ms-swift/pull/10414" target="_blank" rel="noopener noreferrer">https://github.com/modelscope/ms-swift/pull/10414</a></article><article class="publication"><strong>M2PO support · AReaL</strong><p>2025 · Merged PR #480<br />Implemented M2PO algorithm support, with an example configuration and documentation.</p><a href="https://github.com/areal-project/AReaL/pull/480" target="_blank" rel="noopener noreferrer">https://github.com/areal-project/AReaL/pull/480</a></article></div>
+        </section>
+        <section id="service" aria-labelledby="service-heading">
+          <div class="section-label">07 / Service</div>
+          <div class="section-body"><h2 id="service-heading">Leadership &amp; service</h2><article class="publication"><strong>Vice President · Science and Technology Association</strong><p>Oct. 2026 – Present<br />Institute for Interdisciplinary Information Sciences, Tsinghua University</p></article></div>
         </section>
         <section id="honors" aria-labelledby="honors-heading">
-          <div class="section-label">04 / Honors</div>
-          <div class="section-body">
-            <h2 id="honors-heading">Honors &amp; awards</h2>
-            <div class="publication"><strong>National Scholarship</strong><p>2025</p></div>
-            <div class="publication"><strong>Silver Medal, 40th Chinese Physics Olympiad (CPhO)</strong><p>2023</p></div>
-          </div>
+          <div class="section-label">08 / Honors</div>
+          <div class="section-body"><h2 id="honors-heading">Selected honors &amp; awards</h2><article class="publication"><strong>National Scholarship</strong><p>2025</p></article><article class="publication"><strong>Grand Prize (Rank 1) · Tsinghua University Freshman Mathematics and Physics Competition</strong><p>2025</p></article><article class="publication"><strong>Silver Medal · 40th Chinese Physics Olympiad (CPhO)</strong><p>2023</p></article></div>
         </section>
         <section id="contact" aria-labelledby="contact-heading">
-          <div class="section-label">05 / Contact</div>
+          <div class="section-label">09 / Contact</div>
           <div class="section-body"><h2 id="contact-heading">Contact</h2><p>For research inquiries, please reach me by email.</p><a class="contact-link" href="mailto:majy24@mails.tsinghua.edu.cn">majy24@mails.tsinghua.edu.cn</a></div>
         </section>
         <footer>© <span id="year">2026</span> Jingyuan Ma</footer>
